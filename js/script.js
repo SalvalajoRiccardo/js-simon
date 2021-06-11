@@ -14,11 +14,9 @@ console.log(poolrandom);
 
 document.getElementById('parti').addEventListener('click',function(){
     alert ('numeri da ricordare: ' + poolrandom)
-    setTimeout(fine,3000)
+    setTimeout(fine,30000)
     
 });
-
-
     
 function fine () {
     for (i = 0; i < 5; i++){
@@ -35,7 +33,7 @@ function fine () {
         risposte.push(risp)
     }
 
-    return document.getElementById('risposte').innerHTML = 'risposte date: ' + risposte,
+    document.getElementById('risposte').innerHTML = 'risposte date: ' + risposte,
     document.getElementById('giuste').innerHTML = 'risposte giuste: ' + giuste,
     document.getElementById('punteggio').innerHTML = 'punteggio: ' + risultato;
 }
